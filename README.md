@@ -3,6 +3,7 @@
 * Useful for testing emails.
 * Uses Dumbster to create in memory smtp servers (http://quintanasoft.com/dumbster/)
 * Can create multiple smtp servers by providing different ports.
+* Can be ran as a console app or windows service.
 
 ##Web API
 
