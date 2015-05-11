@@ -19,7 +19,7 @@ namespace FakeSmtpWebService.Controllers
         {
             return SmtpServerInstance.Servers[port].SmtpServer.ReceivedEmail.Select(x => new
             {
-                x.FromAddress,
+                FromAddress = x.FromAddress.Address,
                 x.Headers,
                 x.Importance,
                 x.Priority,
