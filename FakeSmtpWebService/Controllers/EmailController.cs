@@ -23,7 +23,7 @@ namespace FakeSmtpWebService.Controllers
                 x.Headers,
                 x.Importance,
                 x.Priority,
-                x.ToAddresses,
+                ToAddresses = x.ToAddresses.Select(y => y.Address ),
                 Body = x.MessageParts[0].BodyData 
             });
         }
